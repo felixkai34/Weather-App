@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="searchCity()">
+    
+    <main>
+        <div class="container">
+
+            <!-- Header Section -->
+            <header>
+                <img src="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png" alt="logo" width="50px">
+                <div>
+                    <input type="text" id="cityinput" placeholder="Search City" spellcheck="false">
+                    <span id="invalidcityname"></span>
+                </div>
+            </header>
+
+            <!-- Body Section -->
+            <section>
+                <!-- Main -->
+                <div class="main-display">
+
+                    <div class="left">
+                        <h1 id="cityname"></h1>
+                        <h1 id="temp"></h1> <p id="minmax"></p>
+                    </div>
+
+                    <div class="right">
+                        <img src="https://www.freeiconspng.com/thumbs/sun-icon/sun-icon-31.png" alt="sun-icon" width="100px">
+                    </div>
+                    
+                </div>
+
+                <!-- Data -->
+                <div class="weather-data">
+
+                    <div class="data-box">
+                        <i class="fa-solid fa-droplet"></i>
+                        <p>Humidity</p>
+                        <span id="Humidity"></span>    
+                    </div>
+                    <div class="data-box">
+                        <i class="fa-solid fa-temperature-three-quarters"></i>
+                        <p>Feels like</p>
+                        <span id="Feelslike"></span>    
+                    </div>
+                    <div class="data-box">
+                        <i class="fa-solid fa-wind"></i>
+                        <p>Wind Speed</p>
+                        <span id="WindSpeed"></span>
+                    </div>
+                    <div class="data-box">
+                        <i class="fa-regular fa-eye"></i>
+                        <p>Visibility</p>
+                        <span id="Visibility"></span>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
+

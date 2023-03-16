@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    padding: 0px 20px;
+    background-color: skyblue;
+}
+
+main{
+    max-width: 700px;
+    height: 100vh;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+header div{
+    width: 90%;
+
+    margin-left: 10px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    background-color: #EAECEF;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+#invalidcityname{
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: red;
+    margin-top: 5px;
+}
+
+.main-display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 95%;
+    margin:10px auto;
+
+    position: relative;
+}
+
+#cityname{
+    font-size: 35px;
+}
+
+#minmax{
+    font-size: 15px;
+    display: inline-block;
+}
+
+#temp{
+    display: inline-block;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.weather-data{
+    width: 95%;
+    height: 300px;
+    background-color: #f4f4f4;
+    margin:20px auto;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns:repeat(2 ,1fr);
+    gap: 3px;
+    overflow: hidden;
+}
+
+.weather-data .data-box{
+    width: 100%;
+    background-color: #EAECEF;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weather-data .data-box p{
+    margin: 10px 0;
+}
+
+@media (max-width:450px) {
+
+    .right img{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 30px;
+    }
+
+    #cityname{
+        font-size: 20px;
+    }
+
+    #temp{
+        font-size: 30px;
+    }
+
+    .weather-data .data-box {
+        font-size: 15px;
+    }
+    
+}
